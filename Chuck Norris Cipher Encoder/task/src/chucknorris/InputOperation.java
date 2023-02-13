@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class InputOperation {
     String inputOperator;
-    boolean validOperation, isEncode, isDecode, exitProgram = false;
+    boolean validOperation, exitProgram = false;
 
     public void chooseOperation() {
         while (!validOperation) {
@@ -16,11 +16,13 @@ public class InputOperation {
                 validOperation = true;
                 switch (inputOperator.toLowerCase()) {
                     case "encode" -> {
-                        Encode encd = new Encode();
+                        Encode encodeInput = new Encode();
+                        encodeInput.encodeAction();
                         validOperation = false;
                     }
                     case "decode" -> {
-                        Decode decd = new Decode();
+                        Decode decodeInput = new Decode();
+                        decodeInput.decodeAction();
                         validOperation = false;
                     }
                     case "exit" -> {

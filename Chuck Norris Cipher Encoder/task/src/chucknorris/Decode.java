@@ -1,7 +1,7 @@
 package chucknorris;
 import java.util.Scanner;
 
-public class Decode extends InputOperation{
+public class Decode {
     String inputToDecode;
     StringBuilder decryption;
     StringBuilder decodedBit;
@@ -22,7 +22,6 @@ public class Decode extends InputOperation{
         System.out.println("Input encoded string: ");
         Scanner scanner = new Scanner(System.in);
         inputToDecode = scanner.nextLine();
-        this.decodeAction();
     }
 
     public void decodeAction () throws StringIndexOutOfBoundsException {
@@ -33,6 +32,7 @@ public class Decode extends InputOperation{
             System.out.println("Encoded string is not valid.");
         }
     }
+
     public String chuckNorrisDecoder() throws StringIndexOutOfBoundsException {
         for (int i = 0; i < inputToDecode.length(); i++) {
             if ((inputToDecode.substring(0, 3).contains("00 ") || inputToDecode.substring(0, 2).contains("0 "))

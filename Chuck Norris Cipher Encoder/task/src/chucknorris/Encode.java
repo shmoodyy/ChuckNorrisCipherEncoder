@@ -2,7 +2,7 @@ package chucknorris;
 
 import java.util.Scanner;
 
-public class Encode extends InputOperation {
+public class Encode {
     static String inputToEncode;
     static String encodedCount0 = "0";
     static String encodedCount1 = "0";
@@ -12,6 +12,9 @@ public class Encode extends InputOperation {
         System.out.println("Input string: ");
         Scanner scanner = new Scanner(System.in);
         inputToEncode = scanner.nextLine();
+    }
+
+    public void encodeAction() {
         System.out.println("Encoded string: ");
         chuckNorrisEncoder(convertStringToBinary());
         System.out.println();
@@ -19,7 +22,6 @@ public class Encode extends InputOperation {
     }
 
     public String convertStringToBinary() {
-
         StringBuilder result = new StringBuilder();
         char[] chars = inputToEncode.toCharArray();
         for (char aChar : chars) {
