@@ -16,9 +16,7 @@ public class Decode {
         decodedBit = new StringBuilder();
         result = new StringBuilder();
         spaceCount = repeatCount = 0;
-//        repeatCount = 0;
         validCode = isZero = false;
-//        isZero = false;
         System.out.println("Input encoded string: ");
         Scanner scanner = new Scanner(System.in);
         inputToDecode = scanner.nextLine();
