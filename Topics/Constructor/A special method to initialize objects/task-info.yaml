@@ -1,0 +1,29 @@
+type: choice
+is_multiple_choice: false
+options:
+- text: Getter
+- text: Destructor
+- text: Preparator
+- text: Constructor
+- text: Finalizer
+files:
+- name: src/Task.java
+  visible: true
+  text: |
+    // You can experiment here, it won’t be checked
+
+    public class Task {
+      public static void main(String[] args) {
+        // put your code here
+      }
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/1985#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Fri, 10 Feb 2023 15:56:37 UTC"
+record: -1
+selected_options:
+- 3
+local_check: false
