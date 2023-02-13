@@ -4,11 +4,13 @@ import java.util.Scanner;
 
 public class Encode {
     static String inputToEncode;
-    static String encodedCount0 = "0";
-    static String encodedCount1 = "0";
-    static int count0, count1 = 0;
+    static String encodedCount0;
+    static String encodedCount1;
+    static int count0, count1;
 
     public Encode() {
+        encodedCount0 = encodedCount1 = "0";
+        count0 = count1 = 0;
         System.out.println("Input string: ");
         Scanner scanner = new Scanner(System.in);
         inputToEncode = scanner.nextLine();
