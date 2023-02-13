@@ -11,7 +11,7 @@ public class Decode {
     static boolean isZero;
     static boolean validCode;
 
-    Decode () {
+    public Decode () {
         decryption = new StringBuilder();
         decodedBit = new StringBuilder();
         result = new StringBuilder();
